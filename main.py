@@ -84,7 +84,7 @@ for i in range(len(list)):
         os.remove(cfile)
 
 of.close()
-xf.close()
+nf.close()
 print('\n>> 정답: {0}개\n>> 오답: {1}개'.format(o, x))
 time.sleep(3)
 sys.exit()
