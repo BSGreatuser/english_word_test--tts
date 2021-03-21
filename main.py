@@ -76,13 +76,15 @@ for i in range(len(list)):
             of.write(word)
         else:
             x = x + 1
-            nf.write(word)
+            nf.write('{0} (작성단어: {1}:{2})'.format(word, eng_answer.rstrip(), kor_answer.rstrip())
         count = count + 1
 
         time.sleep(1)
         os.remove(file)
         os.remove(cfile)
 
+of.close()
+xf.close()
 print('\n>> 정답: {0}개\n>> 오답: {1}개'.format(o, x))
 time.sleep(3)
 sys.exit()
