@@ -76,7 +76,7 @@ for i in range(len(list)):
             of.write(word)
         else:
             x = x + 1
-            nf.write('{0} (작성단어: {1}/{2})'.format(word.rstrip(), eng_answer.rstrip(), kor_answer.rstrip())
+            nf.write('{0} (작성단어: {1}/{2})\n'.format(word.rstrip(), eng_answer.rstrip(), kor_answer.rstrip())
         count = count + 1
 
         time.sleep(1)
