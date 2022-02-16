@@ -22,6 +22,8 @@ ceng = re.compile('[a-z|A-Z]')
 
 if os.path.isfile('정답.txt') and os.path.isfile('./i/i.mp3'):
     a = input("안내 음성을 건너 뛰시겠습니까? [y/n]: ")
+    print()
+    
     if a == 'y':
         pass
     else:
@@ -82,6 +84,7 @@ for i in range(len(list)):
         time.sleep(1)
         os.remove(file)
         os.remove(cfile)
+        print()
 
 of.close()
 nf.close()
